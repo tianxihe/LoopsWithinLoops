@@ -17,8 +17,13 @@ def main():
     classic_example_1(3, 9)
     classic_example_2(4)
     classic_example_3(5, 9)
+    aa()
 
-
+def aa():
+    for j in range(3):
+        for k in range(1, 6):
+            print(k, end='')
+        print()
 def classic_example_1(n, m):
     """
     Prints a multiplication table for numbers from 1 to n multiplied
