@@ -283,13 +283,18 @@ def print_characters_slanted(sequence_of_strings):
     Precondition:  the given argument is a sequence of strings.
     """
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #  ** READ THE TESTS that have been written for you (ABOVE).
     #  ** ASK QUESTIONS if you do not understand the TESTS (ABOVE).
     #
     # ** HINT: ** Consider using string multiplication for the spaces
     #             and string addition to stitch the spaces to the character.
     # ------------------------------------------------------------------
+    for k in range(len(sequence_of_strings)):
+        for j in range(len(sequence_of_strings[k])):
+            for q in range(j):
+                print(' ',end='')
+            print(sequence_of_strings[k][j])
 
 
 # ----------------------------------------------------------------------
